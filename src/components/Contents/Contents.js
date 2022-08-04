@@ -13,6 +13,7 @@ const Contents = (props) => {
     const arrMovieRomance = useSelector(state => state.initState.arrMovieRomance);
     const arrMovieComedy = useSelector(state => state.initState.arrMovieComedy);
     const arrMovieDocument = useSelector(state => state.initState.arrMovieDocument);
+
     useEffect(() => {
         dispatch(getNetFlixOriginal());
         dispatch(getTrendingMovie());
